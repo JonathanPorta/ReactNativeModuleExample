@@ -110,6 +110,34 @@
 			remoteGlobalIDString = 3D383D621EBD27B9005632C8;
 			remoteInfo = "double-conversion-tvOS";
 		};
+		1133D56B1F0F75190037E2C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1133D5641F0F75180037E2C5 /* Maps.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 348E57981B0F49D8000FA02A;
+			remoteInfo = MAPS.ME;
+		};
+		1133D56D1F0F75190037E2C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1133D5641F0F75180037E2C5 /* Maps.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6741AA5D1BF340DE002C974C;
+			remoteInfo = xcMAPS.ME;
+		};
+		1133D56F1F0F75190037E2C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1133D5641F0F75180037E2C5 /* Maps.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 849CF7A31DE842290024A8A5;
+			remoteInfo = cmMAPS.ME;
+		};
+		1133D5711F0F752C0037E2C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1133D5641F0F75180037E2C5 /* Maps.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 849CF5E21DE842290024A8A5;
+			remoteInfo = cmMAPS.ME;
+		};
 		139105C01AF99BAD00B5F7CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */;
@@ -270,6 +298,7 @@
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* ReactNativeModuleExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactNativeModuleExampleTests.m; sourceTree = "<group>"; };
 		1133D53D1F0F72B00037E2C5 /* RNTMapManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RNTMapManager.m; path = ReactNativeModuleExample/RNTMapManager.m; sourceTree = "<group>"; };
+		1133D5641F0F75180037E2C5 /* Maps.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Maps.xcodeproj; path = ../../omim/iphone/Maps/Maps.xcodeproj; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* ReactNativeModuleExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactNativeModuleExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -398,6 +427,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		1133D5651F0F75180037E2C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1133D56C1F0F75190037E2C5 /* maps.me dbg.app */,
+				1133D56E1F0F75190037E2C5 /* xc dbg.app */,
+				1133D5701F0F75190037E2C5 /* cm dbg.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		139105B71AF99BAD00B5F7CC /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -471,6 +510,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				1133D5641F0F75180037E2C5 /* Maps.xcodeproj */,
 				5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
 				00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */,
@@ -551,6 +591,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				1133D5721F0F752C0037E2C5 /* PBXTargetDependency */,
 			);
 			name = ReactNativeModuleExample;
 			productName = "Hello World";
@@ -629,6 +670,10 @@
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
+				{
+					ProductGroup = 1133D5651F0F75180037E2C5 /* Products */;
+					ProjectRef = 1133D5641F0F75180037E2C5 /* Maps.xcodeproj */;
+				},
 				{
 					ProductGroup = 00C302A81ABCB8CE00DB3ED1 /* Products */;
 					ProjectRef = 00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */;
@@ -746,6 +791,27 @@
 			fileType = archive.ar;
 			path = "libdouble-conversion.a";
 			remoteRef = 1133D5621F0F72B10037E2C5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1133D56C1F0F75190037E2C5 /* maps.me dbg.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "maps.me dbg.app";
+			remoteRef = 1133D56B1F0F75190037E2C5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1133D56E1F0F75190037E2C5 /* xc dbg.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "xc dbg.app";
+			remoteRef = 1133D56D1F0F75190037E2C5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1133D5701F0F75190037E2C5 /* cm dbg.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "cm dbg.app";
+			remoteRef = 1133D56F1F0F75190037E2C5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		139105C11AF99BAD00B5F7CC /* libRCTSettings.a */ = {
@@ -998,6 +1064,11 @@
 			isa = PBXTargetDependency;
 			target = 13B07F861A680F5B00A75B9A /* ReactNativeModuleExample */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+		};
+		1133D5721F0F752C0037E2C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = cmMAPS.ME;
+			targetProxy = 1133D5711F0F752C0037E2C5 /* PBXContainerItemProxy */;
 		};
 		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
