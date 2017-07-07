@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <MapKit/MapKit.h>
 #import <React/RCTViewManager.h>
+#import <MWMNavigationController.h>
 
 @interface RNTMapManager : RCTViewManager
 @end
