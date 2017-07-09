@@ -1,0 +1,8 @@
+//
+//  Config.xcconfig
+//  ReactNativeModuleExample
+//
+//  Created by Jonathan Porta on 7/7/17.
+//  Copyright © 2017 Facebook. All rights reserved.
+//
+HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/usr/local/include";

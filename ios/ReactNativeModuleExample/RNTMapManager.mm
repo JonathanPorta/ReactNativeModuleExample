@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <MapKit/MapKit.h>
 #import <React/RCTViewManager.h>
-#import <MWMNavigationController.h>
+#import <MapViewController.h>
 
 @interface RNTMapManager : RCTViewManager
 @end
@@ -20,7 +20,7 @@ RCT_EXPORT_MODULE()
 
 - (UIView *)view
 {
-  return [[MKMapView alloc] init];
+  return [[[MapViewController alloc] view]  init];
 }
 
 @end
